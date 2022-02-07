@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="songname">
+                <h1 id="songnameid"></h1>
+            </div>
+
+            <div class="musicimg" id="mimg" src="" onclick=""></div>
+            <div class="timeindictor">
+
+                <h3 id="currentlength">00</h3> <input type="range" id="vol" class="vol" step="any" value="0" min="0" max="" onchange="changeProgressBar()">
+                <h3 id="songlength">0:00</h3>
+            </div>
+            <div class="mbuttons">
+                <div class="mbtn" id="Suffle">
+                    <div class="pybtn"><img id="" src="/images/shuffle.png"></div>
+                </div>
+                <div class="mbtn" id="Pervious">
+                    <div class="pybtn" onclick="previous()"><img id="" src="/images/privous.png"></div>
+                </div>
+                <div class="mbtn"><button value="ON" class="pybtn" id="play1"><img id="plyicon" onclick="playsong()" src="/images/play.png"></button></div>
+                <div class="mbtn" id="next">
+                    <div class="pybtn" onclick="next()"><img id="" src="/images/next.png"></div>
+                </div>
+                <div class="mbtn" id="reapet">
+                    <div class="pybtn"><img id="" src="/images/reapet.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

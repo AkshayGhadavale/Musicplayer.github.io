@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(9, 3, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(58, 55, 55, 0.699);
+    border-radius: 20px;
+}
+
+@keyframes musicplayermove {
+    0%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: translateY(-45px);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.container .songname {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    overflow: hidden;
+}
+
+#songnameid {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: textmove 10s infinite linear;
+    position: relative;
+}
+
+@keyframes textmove {
+    0% {
+        left: 40vh;
+    }
+    100% {
+        left: -60vh;
+    }
+}
+
+.container .musicimg {
+    width: 80%;
+    height: 50%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: musicplayermove 1s infinite linear;
+}
+
+.timeindictor {
+    width: 90%;
+    height: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mbuttons {
+    width: 80%;
+    height: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    align-items: center;
+}
+
+.mbtn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.pybtn {
+    width: 90%;
+    height: 90%;
+    background-color: #2ecc71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.pybtn img {
+    background-position: center;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* 
+#plyicon{
+    background-image: url(/images/play.png);
+    background-size: cover;
+} */
+
+.vol {
+    width: 70%;
+}
+
+audio {}
+
+#play1 {}
+
+
+/*mobiiile*********************************************************************************************************************************************/
+
+
+/*for mobile */
+
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(9, 3, 39);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 75%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(58, 55, 55, 0.699);
+        border-radius: 20px;
+    }
+    @keyframes musicplayermove {
+        0%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: translateY(-25px);
+        }
+        40% {
+            transform: translateY(-15px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+    .container .songname {
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: antiquewhite;
+        overflow: hidden;
+    }
+    #songnameid {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        animation: textmove 10s infinite linear;
+        position: relative;
+    }
+    @keyframes textmove {
+        0% {
+            left: 40vh;
+        }
+        100% {
+            left: -60vh;
+        }
+    }
+    .container .musicimg {
+        width: 75%;
+        height: 40%;
+        margin-top: 5%;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: musicplayermove 1s infinite linear;
+        animation-play-state: paused;
+    }
+    .timeindictor {
+        width: 90%;
+        height: 10%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type=range] {}
+    .mbuttons {
+        width: 80%;
+        height: 20%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        display: flex;
+        align-items: center;
+    }
+    .mbtn {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    .pybtn {
+        width: 90%;
+        height: 90%;
+        background-color: #2ecc71;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+    .pybtn img {
+        background-position: center;
+        width: 80%;
+        height: 80%;
+    }
+    /* 
+    #plyicon{
+        background-image: url(/images/play.png);
+        background-size: cover;
+    } */
+    .vol {
+        width: 70%;
+    }
+    audio {}
+    #play1 {}
+}
