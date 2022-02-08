@@ -98,7 +98,7 @@ function playsong() {
     showtime();
     //    audio.play();
     if (document.getElementById("play1").value === "ON") {
-        document.getElementById("plyicon").src = "/images/pause.png";
+        document.getElementById("plyicon").src = "./images/pause.png";
 
         // alert(songs[po][1]);
         document.getElementById("mimg").style.backgroundImage =
@@ -135,7 +135,7 @@ function showtime() {
     songbar.value = audio.currentTime;
 
     if (audio.currentTime == audio.duration) {
-        document.getElementById("plyicon").src = "/images/play.png";
+        document.getElementById("plyicon").src = "./images/play.png";
     }
 }
 
